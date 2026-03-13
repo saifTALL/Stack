@@ -2,15 +2,10 @@ public class TestStack {
 
     public static void main(String[] args) {
 
-        MyStack stack = new MyStack(5);
+        MyStack<String> stack = new MyStack<>();
 
-        stack.push(10);
-        stack.push(20);
-        stack.push(30);
-
-        System.out.println(stack.top());
-
-        stack.pop();
+        stack.push("Java");
+        stack.push("Python");
 
         System.out.println(stack.top());
     }

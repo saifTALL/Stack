@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 
-public class MyStack {
+public class MyStack<T> {
 
-    private ArrayList<Integer> elements;
+    private ArrayList<T> elements;
 
     public MyStack(){
         elements = new ArrayList<>();
     }
 
-    public void push(int n){
+    public void push(T n){
         elements.add(n);
     }
 
@@ -16,7 +16,7 @@ public class MyStack {
         elements.remove(elements.size()-1);
     }
 
-    public int top(){
+    public T top(){
         return elements.get(elements.size()-1);
     }
 
